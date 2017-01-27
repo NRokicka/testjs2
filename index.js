@@ -20,8 +20,8 @@ function equationDescr(a,b,c) {
     var d = b*b-4*a*c, x, x1, x2, result;
    
     
-    if (a==0, b>0){
-        x=-c/b;
+    if (a===0){
+        x= -c/b;
         result ='<br>x='+x;
     }
     else if(a==0, b==0){
@@ -32,7 +32,7 @@ function equationDescr(a,b,c) {
         x2=(-b-Math.sqrt(d))/(2*a);
         result='<br>x1='+x1+', x2='+x2;
     }
-    else if (d==0) {
+    else if (d===0) {
         x= -b/(2*a);
         result="<br>x="+x;
     }
