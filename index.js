@@ -17,14 +17,13 @@ document.write(thirdPart);
 
 
 function equationDescr(a,b,c) {
-    var d = b*b-4*a*c, x, x1, x2, result;
+    var d = b*b-4*a*c;
    
-    
-    if (a===0){
+    if (a===0 && b>0){
         x= -c/b;
         result ='<br>x='+x;
     }
-    else if(a==0, b==0){
+    else if(a===0 && b===0 && d<0){
         result='<br>no result';
     }
     else if (d>0) {
@@ -36,10 +35,7 @@ function equationDescr(a,b,c) {
         x= -b/(2*a);
         result="<br>x="+x;
     }
-    else if(d<0) {
-        result='<br>no result';
-    }
-    return result;
+       return result;
     }
 
 document.write(equationDescr(a,b,c));
